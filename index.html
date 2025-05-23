@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Cycle Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📦 Life Cycle Tracker</h1>
+  <form id="tracker-form">
+    <label for="container-id">Container ID:</label>
+    <input type="text" id="container-id" required />
+    <label for="user-name">Name/Initials:</label>
+    <input type="text" id="user-name" required />
+    <button type="submit">Scan</button>
+  </form>
+
+  <table id="tracker-table">
+    <thead>
+      <tr>
+        <th>Container ID</th>
+        <th>Status</th>
+        <th>User</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Scan results will show here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
